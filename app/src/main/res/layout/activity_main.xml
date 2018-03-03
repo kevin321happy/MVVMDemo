@@ -10,6 +10,10 @@
         <variable
             name="user"
             type="com.wh.jxd.com.mvvmdemo.bean.User" />
+
+        <variable
+            name="presenter"
+            type="com.wh.jxd.com.mvvmdemo.MainActivity.Presenter" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
