@@ -5,7 +5,7 @@ import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.android.databinding.library.baseAdapters.BR;
+
 import com.wh.jxd.com.mvvmdemo.bean.User;
 
 public class StudentActivity extends AppCompatActivity {
