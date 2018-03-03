@@ -10,5 +10,14 @@ import java.util.List;
  */
 
 public class UserResponse {
-    @SerializedName("results") private List<User> peopleList;
+    @SerializedName("results")
+    private List<User> peopleList;
+
+    public List<User> getPeopleList() {
+        return peopleList;
+    }
+
+    public void setPeopleList(List<User> mPeopleList) {
+        this.peopleList = mPeopleList;
+    }
 }
