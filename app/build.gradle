@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -16,14 +17,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-    packagingOptions {
-        exclude 'META-INF/rxjava.properties'
-    }
     //支持DataBinding
     dataBinding {
         enabled = true
     }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
