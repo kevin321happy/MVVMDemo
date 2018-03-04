@@ -2,6 +2,11 @@ package com.wh.jxd.com.mvvmdemo.bean;
 
 
 
+import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
+import android.widget.Toolbar;
+
 import java.io.Serializable;
 
 /**
@@ -9,6 +14,7 @@ import java.io.Serializable;
  */
 
 public class User implements Serializable{
+
     private String nama;
     private String age;
 
@@ -31,5 +37,22 @@ public class User implements Serializable{
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    /**
+     * 点击了姓名
+     */
+    public void ClickedName(View view){
+        Log.d("test","点击了姓名");
+
+
+    }
+    /**
+     * 点击了年纪
+     */
+    public void ClickedAge(View view){
+
+        Log.d("test","点击了年龄");
+
     }
 }

@@ -14,11 +14,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{user.nama}"
+            android:onClick="@{user::ClickedName}"
             android:textColor="@color/colorAccent" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{user.age}"
+            android:onClick="@{user::ClickedAge}"
             android:textColor="@color/colorPrimary" />
     </LinearLayout>
 </layout>

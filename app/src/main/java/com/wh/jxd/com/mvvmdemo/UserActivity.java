@@ -18,7 +18,6 @@ public class UserActivity extends AppCompatActivity {
         initDataBinding();
 
     }
-
     /**
      * 初始化DataBinding
      */
