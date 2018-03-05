@@ -1,7 +1,6 @@
 package com.wh.jxd.com.mvvmdemo.bean;
 
 
-
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -13,7 +12,7 @@ import java.io.Serializable;
  * Created by kevin321vip on 2018/2/26.
  */
 
-public class User implements Serializable{
+public class User implements Serializable {
 
     private String nama;
     private String age;
@@ -42,17 +41,29 @@ public class User implements Serializable{
     /**
      * 点击了姓名
      */
-    public void ClickedName(View view){
-        Log.d("test","点击了姓名");
+    public void ClickedName(View view) {
+        Log.d("test", "点击了姓名");
 
 
     }
+
     /**
      * 点击了年纪
      */
-    public void ClickedAge(View view){
+    public void ClickedAge(View view) {
 
-        Log.d("test","点击了年龄");
+        Log.d("test", "点击了年龄");
 
     }
+
+    /**
+     * 获取姓名和年龄的拼接
+     */
+    public String getNA(String name, String age) {
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("NA" + name);
+        buffer.append(age);
+        return buffer.toString();
+    }
+
 }
