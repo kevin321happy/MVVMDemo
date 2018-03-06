@@ -1,6 +1,7 @@
 package com.wh.jxd.com.mvvmdemo.bean;
 
 
+import android.databinding.BaseObservable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -12,10 +13,16 @@ import java.io.Serializable;
  * Created by kevin321vip on 2018/2/26.
  */
 
-public class User implements Serializable {
+public class User extends BaseObservable {
 
     private String nama;
     private String age;
+    private User mUser;
+
+    public void setUser(User user) {
+        mUser = user;
+        notifyChange();
+    }
 
     public User(String nama, String age) {
         this.nama = nama;
@@ -28,6 +35,7 @@ public class User implements Serializable {
 
     public void setNama(String nama) {
         this.nama = nama;
+        notifyChange();
     }
 
     public String getAge() {
@@ -36,6 +44,7 @@ public class User implements Serializable {
 
     public void setAge(String age) {
         this.age = age;
+        notifyChange();
     }
 
     /**
