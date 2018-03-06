@@ -7,15 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.wh.jxd.com.mvvmdemo.databinding.TestActivityBinding;
 
-public class Testctivity extends AppCompatActivity {
+public class TestActivity extends AppCompatActivity {
+
+    private TestActivityBinding mTestActivityBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        TestActivityBinding
-
-
-
+        mTestActivityBinding = DataBindingUtil.setContentView(this, R.layout.test_activity);
 
     }
 }

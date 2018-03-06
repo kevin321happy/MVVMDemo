@@ -6,6 +6,10 @@
         <variable
             name="user"
             type="com.wh.jxd.com.mvvmdemo.bean.User" />
+
+        <variable
+            name="presenter"
+            type="com.wh.jxd.com.mvvmdemo.UserActivity.Presenter" />
     </data>
 
     <LinearLayout
@@ -27,12 +31,11 @@
             android:onClick="@{user::ClickedAge}"
             android:text="@{user.age}"
             android:textColor="@color/colorPrimary" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{user.getNA(user.nama,user.age)}"
-            android:textColor="@color/colorPrimary" />
-
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@{user.getNA(user.nama,user.age)}"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:onClick="@{presenter::GotoNext}"/>-->
     </LinearLayout>
 </layout>

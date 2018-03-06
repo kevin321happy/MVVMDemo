@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.wh.jxd.com.mvvmdemo.MainActivity">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <Button
-            android:onClick="jumpToMVVM"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="点击跳转到MVVM界面"/>
-    </LinearLayout>
-</layout>
+        android:layout_height="wrap_content"
+        android:onClick="jumpToMVVM"
+        android:text="点击跳转到MVVM界面" />
+</LinearLayout>
 
