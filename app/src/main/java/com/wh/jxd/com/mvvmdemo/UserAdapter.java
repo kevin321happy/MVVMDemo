@@ -33,6 +33,7 @@ public class UserAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+
         ((UserAdapterViewHodler) holder).bindPeople(mUserList.get(position));
     }
 
@@ -50,12 +51,7 @@ public class UserAdapter extends RecyclerView.Adapter {
         }
 
         public void bindPeople(User user) {
-            if (mItemTestBinding.getUsermodel() == null) {
-                mItemTestBinding.setUsermodel(
-                        new User("呵呵呵", "30"));
-            } else {
-                mItemTestBinding.getUsermodel().setUser(user);
-            }
+            mItemTestBinding.setUsermodel(user);
         }
     }
 }
